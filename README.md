@@ -12,9 +12,9 @@ You can try it out before installing it: [Live demo](https://demo.coolify.io/)
 ## Inputs
 | Name              | Required                      | Description                                                                       |
 |-------------------|:-----------------------------:|-----------------------------------------------------------------------------------|
-| coolify-url       |    <ul><li>- [x] </li></ol>   | Url of your coolify. Ex. https://coolify.com || http://131.212.31.123:3000        |
-| coolify-app-id    |    <ul><li>- [x] </li></ol>   | Application id                                                                    |
-| coolify-token     |    <ul><li>- [x] </li></ol>   | Bearer token base                                                                 |
+| coolifyUrl       |    <ul><li>- [x] </li></ol>   | Url of your coolify. Ex. https://coolify.com || http://131.212.31.123:3000        |
+| coolifyAppId     |    <ul><li>- [x] </li></ol>   | Application id                                                                    |
+| coolifyToken     |    <ul><li>- [x] </li></ol>   | Bearer token base                                                                 |
 
 ## Outputs
 
@@ -42,7 +42,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: themarkwill/coolify-actions@v0.0.3 #deploy
         with:
-          coolify-url: ${{ secrets.COOLIFY_URL }} # Required
-          coolify-app-id: ${{ secrets.COOLIFY_APP_ID }}  #Required
-          coolify-token: ${{ secrets.COOLIFY_TOKEN }} #Required 
+          coolifyUrl: ${{ secrets.COOLIFY_URL }} # Required
+          coolifyAppId: ${{ secrets.COOLIFY_APP_ID }}  #Required
+          coolifyToken: ${{ secrets.COOLIFY_TOKEN }} #Required 
 ```
